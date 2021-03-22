@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    
+}
+html{
+    font-size: 62.5%;
+    background-color: #fff;
+}
+body{
+    max-width: 900px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    background-image: linear-gradient(rgb(194, 151, 171),rgb(27,11,15));
+}
+header{
+    overflow: auto;
+    background-color: #F7F7F7;
+    padding: 1em;
+}
+header h2{
+    display: inline;
+}
+
+header h2:nth-child(1){
+    float: left;
+}
+header h2:nth-child(2){
+    float: right;
+}
+main{
+    padding: 1em;
+}
+main > div:nth-child(1) img{
+    width: 50%;
+    display:inline-block;
+    height: 28rem;
+    object-fit: cover;
+}
+main > div:nth-child(1) p{
+    width: 45%;
+    display:inline-block;
+    vertical-align: top;
+    margin-left: 2rem;
+    background-color: rgb(233,224,232);
+    min-height: 28rem;
+}
+main > div:nth-child(1) p span:nth-child(1){
+    display:block;
+    background-image: linear-gradient(rgb(218, 218, 218),#646464);
+    color: #fff;
+    font-size: 2rem;
+    padding: .3em;
+    
+}
+main > div:nth-child(1) p span:nth-child(2){
+    margin-bottom: 2rem;
+}
+main > div:nth-child(1) p >*{
+    display: block;
+    padding: .3em;
+}
+main article{
+    background-image: linear-gradient(to right,#fff,#DBCCDA);
+    display: inline-block;
+    max-width: 30%;
+    margin: 1rem;
+}
+main article h3{
+    display:block;
+    background-image: linear-gradient(rgb(218, 218, 218),#646464);
+    color: #fff;
+    font-size: 2rem;
+    padding: .3em;
+}
+article > img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 1em;
+}
+article > p {
+    margin-bottom: 2em;
+    margin-left: .3em;
+}
+article > h3:nth-child(2){
+    margin-bottom: 2rem;
+}
+article > div > img {
+    width: 3rem;
+    object-fit: cover;
+    margin: .3em;
+}
+article >:nth-child(4){
+    margin-bottom: 1rem;
+}
+input[type="button"]{
+    display: block;
+    margin: auto 0;
+    background-color: #0f0;
+    box-shadow: 1px 1px 5px #000;
+    border-radius: 1em;
+    padding: .2em 1em;
+    margin: 1em auto;
+}
+
+input[type="button"]:focus{
+    outline: none;
+}
+
+footer{
+    background-color: #F7F7F7;
+    padding: 1em;
+    text-align: center;
+}
+footer img{
+    width: 20px;
+    vertical-align: bottom;
+}
+
+@media only screen and (max-width: 1024px) {
+    main > div:nth-child(1) img{
+        width: 100%;
+        display:block;
+        height: 28rem;
+        object-fit: fill;
+    }
+    main > div:nth-child(1) p{
+        width: 100%;
+        display:block;
+        background-color: rgb(233,224,232);
+        min-height: 28rem;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    main article{
+        background-image: linear-gradient(to right,#fff,#DBCCDA);
+        display:block;
+        max-width: 100%;
+        margin: 1rem 0;
+        padding-bottom: 1rem;
+    }
+    main > div:nth-child(2){
+        padding: 0;
+    }
+    header >*{
+        width: 100%;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+}
